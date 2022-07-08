@@ -1,0 +1,17 @@
+@use "sass:math";
+
+$htmlFontSize: 16px;
+
+/* Converts pixel value with/out unit to rem */
+@function rem($pxValue) {
+  @return math.div(stripUnit($pxValue), stripUnit($htmlFontSize)) * 1rem;
+}
+
+/* Converts pixel value with/out unit to em */
+@function em($pxValue, $contextFontSize: $htmlFontSize) {
+  @return math.div(stripUnit($pxValue), stripUnit($contextFontSize)) * 1em;
+}
+
+@function stripUnit($value) {
+  @return math.div($value, $value * 0 + 1);
+}

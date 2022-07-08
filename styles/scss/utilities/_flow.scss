@@ -1,0 +1,6 @@
+@use "../abstracts/functions" as *;
+
+.flow>*:where(:not(:first-child)) {
+    --flow-space: #{rem(16px)};
+    margin-top: var(--flow-space);
+}
