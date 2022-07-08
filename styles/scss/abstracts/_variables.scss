@@ -1,5 +1,37 @@
-/* Breakpoints */
+/* ------------- Breakpoints ------------- */
 $breakpoints: (
   "medium": 48em, // 768px
   "large": 69.375em // 1110px
 );
+
+/* ------------- Typography ------------- */
+$font-primary: "Public Sans", sans-serif;
+$font-secondary: "DM Serif Display", serif;
+
+$font-size-1000: rem(72);
+$font-size-900: rem(56);
+$font-size-800: rem(48);
+$font-size-700: rem(32);
+$font-size-600: rem(24);
+$font-size-500: rem(18);
+$font-size-400: rem(15);
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$line-height-6: 1.87;
+$line-height-5: 1.39;
+$line-height-4: 1.33;
+$line-height-3: 1.25;
+$line-height-2: 1.17;
+$line-height-1: 1;
+
+/* ------------- Colors ------------- */
+/* primary */
+$dark-pink: #ba4270;
+$link-water-white: #fbfcfe;
+/* secondary */
+$san-juan-blue: #36536b;
+$mirage-blue: #1b262f;
+$charm-pink: #da6d97;
+$light-san-juan-blue: #6c8294;
