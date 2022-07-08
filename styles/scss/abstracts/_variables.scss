@@ -1,9 +1,10 @@
-@use './functions' as *;
+@use "./functions" as *;
 
 /* ------------- Breakpoints ------------- */
 $breakpoints: (
-  "medium": 48em, // 768px
-  "large": 69.375em // 1110px
+  "medium": 48em,
+  // 768px
+  "large": 69.375em // 1110px,
 );
 
 /* ------------- Typography ------------- */
@@ -29,6 +30,7 @@ $line-height-2: 1.17;
 $line-height-1: 1;
 
 /* ------------- Colors ------------- */
+$white: #ffffff;
 /* primary */
 $dark-pink: #ba4270;
 $link-water-white: #fbfcfe;

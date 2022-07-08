@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+button,
+.btn {
+  display: inline-block;
+  padding: em(15, 15) em(24, 15);
+  border: 1px solid $san-juan-blue;
+  border-radius: 50px;
+  background-color: transparent;
+  color: $san-juan-blue;
+  font-size: $font-size-400;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+
+  @include on-event {
+    background-color: $san-juan-blue;
+    color: $white;
+  }
+}
+
+.btn--primary {
+  border-color: $dark-pink;
+  background-color: $dark-pink;
+  color: $white;
+
+  @include on-event {
+    border-color: $charm-pink;
+    background-color: $charm-pink;
+  }
+}
+
+.btn--light {
+  border-color: $link-water-white;
+  color: $link-water-white;
+
+  @include on-event {
+    background-color: $link-water-white;
+    color: $mirage-blue;
+  }
+}
