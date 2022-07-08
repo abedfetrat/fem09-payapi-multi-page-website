@@ -1,4 +1,7 @@
 styles/css/
+styles/scss/pages/_demo.scss
+
+demo.html
 
 # Avoid accidental Sketch file upload 
 ###############################################

@@ -1,3 +1,5 @@
+@use './functions' as *;
+
 /* ------------- Breakpoints ------------- */
 $breakpoints: (
   "medium": 48em, // 768px
@@ -31,7 +33,18 @@ $line-height-1: 1;
 $dark-pink: #ba4270;
 $link-water-white: #fbfcfe;
 /* secondary */
+$link-water-blue: #edf3f8;
 $san-juan-blue: #36536b;
 $mirage-blue: #1b262f;
 $charm-pink: #da6d97;
 $light-san-juan-blue: #6c8294;
+$red: #ff0000;
+
+$color-text: $light-san-juan-blue;
+$color-text-light: $link-water-white;
+$color-heading: $san-juan-blue;
+$color-heading-light: $link-water-white;
+$color-heading-primary: $dark-pink;
+$color-error: $red;
+$color-background: $link-water-blue;
+$color-background-dark: $mirage-blue;

@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+body {
+  font-family: $font-primary;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-400;
+  line-height: $line-height-6;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-secondary;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: $color-heading;
+}
+
+a {
+    font-weight: $font-weight-bold;
+    color: inherit;
+    text-decoration: none;
+    @include on-event {
+        color: $san-juan-blue;
+    }
+}
