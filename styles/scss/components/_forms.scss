@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+
+/* ------------- CTA Form ------------- */
+.cta-form {
+  &__container {
+    width: 100%;
+
+    @include bp-up("medium") {
+      position: relative;
+      max-width: rem(445px);
+    }
+  }
+
+  &__email,
+  &__submit {
+    display: block;
+    width: inherit;
+  }
+
+  &__email,
+  ::placeholder {
+    font-size: $font-size-400;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    color: $san-juan-blue;
+  }
+
+  &__email {
+    padding: rem(15px) rem(27px);
+    border: none;
+    border-radius: rem(50px);
+    background-color: $link-water-white;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+
+    &:focus-visible {
+      outline: rem(2px) solid $light-san-juan-blue;
+    }
+  }
+
+  &__submit {
+    margin-top: rem(16px);
+
+    @include bp-up("medium") {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      width: initial;
+      margin-top: 0;
+    }
+  }
+}
