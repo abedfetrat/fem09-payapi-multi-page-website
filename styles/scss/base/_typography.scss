@@ -45,6 +45,10 @@
     font-size: $fs-800;
     line-height: $lh-2;
   }
+
+  .text-container & {
+    margin-bottom: 0.5em; // 24px margin
+  }
 }
 
 .heading-3 {
@@ -53,6 +57,10 @@
   @include bp-up("large") {
     font-size: $fs-700;
     line-height: $lh-3;
+  }
+
+  .text-container & {
+    margin-bottom: 0.5em; // 24px margin
   }
 }
 

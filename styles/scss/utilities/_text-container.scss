@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+.text-container {
+    --text-length: #{$text-length-lg};
+    max-width: var(--text-length);   
+}
