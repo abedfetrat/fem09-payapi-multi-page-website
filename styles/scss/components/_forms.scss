@@ -2,12 +2,13 @@
 
 /* ------------- CTA Form ------------- */
 .cta-form {
+  width: min(100%, 445px);
+
   &__container {
-    width: 100%;
+    width: inherit;
 
     @include bp-up("medium") {
       position: relative;
-      max-width: rem(445px);
     }
   }
 

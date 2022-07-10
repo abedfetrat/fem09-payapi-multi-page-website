@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: rem(32px);
+
+    .cta__title {
+        display: inline-block;
+    }
+
+    @include bp-up("medium") {
+        row-gap: rem(40px);
+    }
+
+    @include bp-up("large") {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
