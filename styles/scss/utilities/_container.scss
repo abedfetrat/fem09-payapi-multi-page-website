@@ -1,26 +1,15 @@
 @use "../abstracts/functions" as *;
 
-$side-space: rem(16px);
-$max-width: rem(1110px);
-
 .container {
-  --side-space: #{$side-space};
-  --max-width: #{$max-width};
-  padding-inline: var(--side-space);
-  margin-inline: auto;
-  max-width: var(--max-width);
-}
-
-.grid-container {
-  --side-space: #{$side-space};
-  --max-width: #{$max-width};
+  --side-space: #{rem(16px)};
+  --max-width: #{rem(1110px)};
   display: grid;
   grid-template-columns:
     1fr min(var(--max-width), calc(100% - (var(--side-space) * 2)))
     1fr;
-  grid-column-gap: var(--side-space);
+  column-gap: var(--side-space);
 }
 
-.grid-container > * {
+.container > * {
   grid-column: 2;
 }
