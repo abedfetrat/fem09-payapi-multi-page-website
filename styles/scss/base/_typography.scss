@@ -47,7 +47,7 @@
   }
 
   .text-container & {
-    margin-bottom: 0.5em; // 24px margin
+    margin-bottom: em(24px, $fs-800);
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   .text-container & {
-    margin-bottom: 0.5em; // 24px margin
+    margin-bottom: em(24px, $fs-700);
   }
 }
 
