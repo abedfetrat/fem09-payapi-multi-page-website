@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.grid {
+  --columns: 1;
+  --column-gap: #{rem(16px)};
+  --row-gap: #{rem(16px)};
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: var(--column-gap);
+  row-gap: var(--row-gap);
+}
