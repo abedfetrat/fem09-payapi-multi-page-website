@@ -2,9 +2,9 @@
 
 body {
   font-family: $font-primary;
-  font-weight: $font-weight-regular;
-  font-size: $font-size-400;
-  line-height: $line-height-6;
+  font-weight: $fw-regular;
+  font-size: $fs-400;
+  line-height: $lh-6;
   color: $clr-text;
   background-color: $clr-background;
 }
@@ -21,7 +21,7 @@ h4 {
 }
 
 a {
-    font-weight: $font-weight-bold;
+    font-weight: $fw-bold;
     color: $clr-link;
     text-decoration: none;
     @include on-event {
