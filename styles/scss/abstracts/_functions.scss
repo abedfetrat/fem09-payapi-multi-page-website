@@ -9,9 +9,21 @@ $htmlFontSize: 16px;
 
 /* Converts pixel value with/out unit to em */
 @function em($pxValue, $contextFontSize: $htmlFontSize) {
+  /* in case rem value is passed in, it needs to be converted to pixels */
+  @if (getUnit($contextFontSize) == "rem") {
+    $contextFontSize: toPixels($contextFontSize);
+  }
   @return math.div(stripUnit($pxValue), stripUnit($contextFontSize)) * 1em;
 }
 
 @function stripUnit($value) {
   @return math.div($value, $value * 0 + 1);
+}
+
+@function getUnit($value) {
+  @return str-slice($value * 0 + "", 2, -1);
+}
+
+@function toPixels($value) {
+  @return stripUnit($value) * $htmlFontSize;
 }
