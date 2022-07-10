@@ -1,10 +1,12 @@
+@use "sass:color" as *;
 @use "./functions" as *;
 
 /* ------------- Breakpoints ------------- */
 $breakpoints: (
-  "medium": 48em,
   // 768px
-  "large": 69.375em // 1110px,,
+  "medium": 48em,
+  // 1110px
+  "large": 69.375em
 );
 
 /* ------------- Typography ------------- */
@@ -51,6 +53,7 @@ $clr-heading-primary: $pink-500;
 $clr-background: $blue-gray-100;
 $clr-background-dark: $blue-gray-800;
 $clr-error: $red;
+$clr-horizontal-line: $blue-gray-400;
 $clr-element-focus-outline: $blue-gray-600;
 $clr-link: $blue-gray-400;
 $clr-link-hover: $blue-gray-600;
