@@ -20,11 +20,18 @@ h4 {
   color: $clr-heading;
 }
 
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: rem(2px) dashed $clr-element-focus-outline;
+  outline-offset: rem(2px);
+}
+
 a {
-    font-weight: $fw-bold;
-    color: $clr-link;
-    text-decoration: none;
-    @include on-event {
-        color: $clr-link-hover;
-    }
+  font-weight: $fw-bold;
+  color: $clr-link;
+  text-decoration: none;
+  @include on-event {
+    color: $clr-link-hover;
+  }
 }
