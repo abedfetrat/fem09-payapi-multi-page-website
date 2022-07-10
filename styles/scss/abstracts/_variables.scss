@@ -4,7 +4,7 @@
 $breakpoints: (
   "medium": 48em,
   // 768px
-  "large": 69.375em // 1110px,
+  "large": 69.375em // 1110px,,
 );
 
 /* ------------- Typography ------------- */
@@ -31,22 +31,40 @@ $line-height-1: 1;
 
 /* ------------- Colors ------------- */
 $white: #ffffff;
-/* primary */
-$dark-pink: #ba4270;
-$link-water-white: #fbfcfe;
-/* secondary */
-$link-water-blue: #edf3f8;
-$san-juan-blue: #36536b;
-$mirage-blue: #1b262f;
-$charm-pink: #da6d97;
-$light-san-juan-blue: #6c8294;
 $red: #ff0000;
+$pink-500: #ba4270;
+$pink-300: #da6d97;
+$blue-gray-050: #fbfcfe;
+$blue-gray-100: #edf3f8;
+$blue-gray-400: #6c8294;
+$blue-gray-600: #36536b;
+$blue-gray-800: #1b262f;
 
-$color-text: $light-san-juan-blue;
-$color-text-light: $link-water-white;
-$color-heading: $san-juan-blue;
-$color-heading-light: $link-water-white;
-$color-heading-primary: $dark-pink;
-$color-error: $red;
-$color-background: $link-water-blue;
-$color-background-dark: $mirage-blue;
+$clr-text: $blue-gray-400;
+$clr-text-light: $blue-gray-050;
+$clr-heading: $blue-gray-600;
+$clr-heading-light: $blue-gray-050;
+$clr-heading-primary: $pink-500;
+$clr-background: $blue-gray-100;
+$clr-background-dark: $blue-gray-800;
+$clr-error: $red;
+$clr-link: $blue-gray-400;
+$clr-link-hover: $blue-gray-600;
+$clr-button-border: $blue-gray-400;
+$clr-button-bg: transparent;
+$clr-button-text: $blue-gray-400;
+$clr-button-text-hover: $blue-gray-050;
+$clr-button-bg-hover: $blue-gray-400;
+$clr-button-primary-border: $pink-500;
+$clr-button-primary-bg: $pink-500;
+$clr-button-primary-text: $blue-gray-050;
+$clr-button-primary-border-hover: $pink-300;
+$clr-button-primary-bg-hover: $pink-300;
+$clr-button-light-border: $blue-gray-050;
+$clr-button-light-bg: transparent;
+$clr-button-light-text: $blue-gray-050;
+$clr-button-light-bg-hover: $blue-gray-050;
+$clr-button-light-text-hover: $blue-gray-800;
+$clr-cta-form-input-bg: $blue-gray-050;
+$clr-cta-form-input-text: $blue-gray-400;
+$clr-cta-form-input-outline-active: $blue-gray-400;

@@ -4,10 +4,10 @@ button,
 .btn {
   display: inline-block;
   padding: em(15, 15) em(24, 15);
-  border: 1px solid $san-juan-blue;
+  border: 1px solid $clr-button-border;
   border-radius: 50px;
-  background-color: transparent;
-  color: $san-juan-blue;
+  background-color: $clr-button-bg;
+  color: $clr-button-text;
   font-size: $font-size-400;
   font-weight: $font-weight-bold;
   line-height: 1;
@@ -15,28 +15,28 @@ button,
   user-select: none;
 
   @include on-event {
-    background-color: $san-juan-blue;
-    color: $white;
+    background-color: $clr-button-bg-hover;
+    color: $clr-button-text-hover;
   }
 }
 
 .btn--primary {
-  border-color: $dark-pink;
-  background-color: $dark-pink;
-  color: $white;
+  border-color: $clr-button-primary-border;
+  background-color: $clr-button-primary-bg;
+  color: $clr-button-primary-text;
 
   @include on-event {
-    border-color: $charm-pink;
-    background-color: $charm-pink;
+    border-color: $clr-button-primary-border-hover;
+    background-color: $clr-button-primary-bg-hover;
   }
 }
 
 .btn--light {
-  border-color: $link-water-white;
-  color: $link-water-white;
+  border-color: $clr-button-light-border;
+  color: $clr-button-light-text;
 
   @include on-event {
-    background-color: $link-water-white;
-    color: $mirage-blue;
+    background-color: $clr-button-light-bg-hover;
+    color: $clr-button-light-text-hover;
   }
 }

@@ -5,8 +5,8 @@ body {
   font-weight: $font-weight-regular;
   font-size: $font-size-400;
   line-height: $line-height-6;
-  color: $color-text;
-  background-color: $color-background;
+  color: $clr-text;
+  background-color: $clr-background;
 }
 
 h1,
@@ -17,14 +17,14 @@ h4 {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: $color-heading;
+  color: $clr-heading;
 }
 
 a {
     font-weight: $font-weight-bold;
-    color: inherit;
+    color: $clr-link;
     text-decoration: none;
     @include on-event {
-        color: $san-juan-blue;
+        color: $clr-link-hover;
     }
 }
