@@ -1,4 +1,4 @@
-@use "sass:color" as *;
+@use "sass:color";
 @use "./functions" as *;
 
 /* ------------- Breakpoints ------------- */
@@ -19,6 +19,7 @@ $fs-800: rem(48);
 $fs-750: rem(36);
 $fs-700: rem(32);
 $fs-600: rem(24);
+$fs-550: rem(20);
 $fs-500: rem(18);
 $fs-400: rem(15);
 
@@ -49,7 +50,10 @@ $blue-gray-600: #36536b;
 $blue-gray-800: #1b262f;
 
 $clr-text: $blue-gray-400;
-$clr-text-light: $blue-gray-050;
+$clr-text-light: color.adjust(
+  $color: $blue-gray-050,
+  $alpha: -0.3,
+);
 $clr-heading: $blue-gray-600;
 $clr-heading-light: $blue-gray-050;
 $clr-heading-primary: $pink-500;
@@ -77,3 +81,6 @@ $clr-button-light-bg-hover: $blue-gray-050;
 $clr-button-light-text-hover: $blue-gray-800;
 $clr-cta-form-input-bg: $blue-gray-050;
 $clr-cta-form-input-text: $blue-gray-400;
+
+/* ------------- Z order ------------- */
+$z-order-mobile-menu: 99999;

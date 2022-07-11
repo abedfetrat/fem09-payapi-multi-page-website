@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "./variables" as *;
 
+/* --------------- Basic Helpers --------------- */
 @mixin bp-up($bp) {
   @if map.has-key($breakpoints, $bp) {
     @media screen and (min-width: map.get($breakpoints, $bp)) {
@@ -31,4 +32,10 @@
   &:active {
     @content;
   }
+}
+
+/* --------------- Commonly used --------------- */
+@mixin flex {
+  display: flex;
+  align-items: center;
 }

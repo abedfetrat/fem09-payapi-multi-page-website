@@ -1,0 +1,112 @@
+@use "sass:color";
+@use "sass:map";
+@use "../abstracts/" as *;
+
+.primary-header {
+  --nav-link-padding: #{rem(20px)};
+
+  &__inner-container {
+    @include flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: rem(40px);
+    padding-bottom: 0;
+
+    @include bp-up("medium") {
+      column-gap: calc(rem(64px) - var(--nav-link-padding));
+    }
+  }
+
+  .primary-navigation {
+    height: 100%;
+
+    &__items {
+      @include flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    @include bp-down(map.get($breakpoints, "medium") - em(1px)) {
+      --nav-link-padding: #{rem(16px)};
+
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-order-mobile-menu;
+      width: min(100%, rem(300px));
+      padding-top: rem(95px);
+      padding-inline: rem(24px);
+      background-color: $clr-background-dark;
+
+      &__items {
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: rem(43px);
+        border-top: 1px solid
+          color.adjust($color: $blue-gray-050, $alpha: -0.85);
+      }
+
+      &__link {
+        display: block;
+        padding-block: var(--nav-link-padding);
+        font-size: $fs-550;
+        font-weight: $fw-bold;
+        line-height: 1;
+        text-align: center;
+        color: $clr-text-light;
+      }
+
+      .primary-header__cta {
+        display: block;
+        margin-top: var(--nav-link-padding);
+      }
+    }
+
+    @include bp-up("medium") {
+      flex-grow: 1;
+
+      &__items {
+        align-items: stretch;
+      }
+
+      &__item:last-child {
+        margin-left: auto;
+      }
+
+      &__link {
+        @include flex;
+        height: 100%;
+        padding-inline: var(--nav-link-padding);
+      }
+    }
+  }
+
+  &__menu-toggle {
+    width: rem(28px);
+    height: rem(17px);
+    background-image: url("/assets/shared/mobile/menu.svg");
+    background-size: cover;
+
+    @include bp-up("medium") {
+      display: none;
+    }
+  }
+
+  &[data-menu-active] {
+    .primary-navigation {
+      display: block;
+    }
+    .primary-header__menu-toggle {
+      position: fixed;
+      top: rem(48px);
+      right: rem(27px);
+      z-index: $z-order-mobile-menu + 1;
+      width: rem(22px);
+      height: rem(23px);
+      background-image: url("/assets/shared/mobile/close.svg");
+    }
+  }
+}
