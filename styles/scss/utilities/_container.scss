@@ -1,4 +1,4 @@
-@use "../abstracts/functions" as *;
+@use "../abstracts/" as *;
 
 .container {
   --side-space: #{rem(16px)};
@@ -8,6 +8,10 @@
     1fr min(var(--max-width), calc(100% - (var(--side-space) * 2)))
     1fr;
   column-gap: var(--side-space);
+
+  @include bp-up("medium") {
+    --side-space: #{rem(39px)};
+  }
 }
 
 .container > * {
