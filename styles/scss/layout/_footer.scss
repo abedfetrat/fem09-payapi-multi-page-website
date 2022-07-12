@@ -1,0 +1,93 @@
+@use "../abstracts/" as *;
+
+.primary-footer {
+  background-color: $clr-background-dark;
+  background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+  background-position: 50% -50%;
+  background-repeat: no-repeat;
+
+  @include bp-up("medium") {
+    background-position: right rem(-390px) top rem(-136px);
+  }
+
+  &__inner-container {
+    @include flex;
+    flex-direction: column;
+    padding-top: rem(41px);
+    padding-bottom: rem(55px);
+
+    @include bp-up("medium") {
+      flex-direction: row;
+      padding-block: rem(31px);
+    }
+  }
+
+  .primary-navigation {
+    width: 100%;
+    margin-top: rem(24px);
+
+    @include bp-up("medium") {
+      flex-grow: 1;
+      width: initial;
+      margin-top: 0;
+      margin-left: rem(64px);
+    }
+
+    &__items {
+      @include flex;
+      flex-direction: column;
+      width: 100%;
+
+      @include bp-up("medium") {
+        flex-direction: row;
+        column-gap: rem(40px);
+      }
+    }
+
+    &__item {
+      width: 100%;
+      @include bp-up("medium") {
+        width: initial;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding-block: rem(16px);
+      text-align: center;
+      color: $clr-text-light;
+
+      @include bp-up("medium") {
+        padding: 0;
+      }
+
+      @include on-event {
+        color: $clr-link-light-hover;
+      }
+    }
+  }
+
+  &__socials {
+    @include flex;
+    column-gap: rem(24px);
+    margin-top: rem(24px);
+
+    @include bp-up("medium") {
+      margin-top: 0;
+    }
+  }
+
+  &__social-link {
+    @include flex;
+    width: rem(24px);
+    height: rem(24px);
+
+    @include on-event {
+      .primary-footer__social-icon {
+        path {
+          fill: $clr-social-icon-hover;
+        }
+      }
+    }
+  }
+}
