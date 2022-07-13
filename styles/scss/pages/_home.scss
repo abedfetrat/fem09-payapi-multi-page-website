@@ -1,0 +1,99 @@
+@use "../abstracts/" as *;
+
+.home {
+  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: center top -550px;
+  background-repeat: no-repeat;
+
+  .hero {
+    padding-top: rem(32px);
+    padding-bottom: rem(80px);
+    row-gap: rem(24px);
+
+    &__mockup {
+      width: min(100%, rem(128px));
+      height: auto;
+      margin-inline: auto;
+    }
+    &__left {
+      --flow-space: #{rem(24px)};
+      text-align: center;
+    }
+  }
+
+  .partners {
+    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    background-position: center top -602px;
+    background-repeat: no-repeat;
+    background-color: $clr-background-dark;
+    color: $clr-text-light;
+    text-align: center;
+
+    .container {
+      padding-block: rem(80px);
+    }
+
+    &__inner-container {
+      row-gap: rem(56px);
+    }
+
+    &__logos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      column-gap: rem(40px);
+      row-gap: rem(40px);
+    }
+
+    &__logo {
+      width: min(100%, rem(120px));
+      height: auto;
+    }
+
+    &__heading {
+      color: $clr-heading-light;
+    }
+
+    &__about-link {
+      margin-top: rem(60px);
+    }
+  }
+
+  .features {
+    --flow-space: #{rem(80px)};
+    padding-block: rem(80px);
+
+    &__showcase {
+      row-gap: rem(48px);
+      margin-bottom: rem(80px);
+      text-align: center;
+    }
+
+    &__feature-list {
+      row-gap: rem(48px);
+    }
+
+    &__feature {
+      --flow-space: #{rem(32px)};
+      text-align: center;
+    }
+
+    &__feature-icon {
+      margin-inline: auto;
+    }
+
+    &__feature-title {
+      $font-size: $fs-500;
+      font-weight: $fw-bold;
+      color: $clr-heading;
+    }
+
+    &__feature-text {
+      margin-top: rem(16px);
+    }
+  }
+
+  .cta {
+    padding-bottom: rem(80px);
+  }
+}
