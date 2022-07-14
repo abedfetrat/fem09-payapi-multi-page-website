@@ -40,6 +40,7 @@
       width: min(35%, 159px);
       height: auto;
       margin-inline: auto;
+      filter: drop-shadow($shadow-svg-graphic);
 
       @include bp-up("large") {
         width: rem(263px);
@@ -182,6 +183,10 @@
     &__showcase-image,
     .text-container {
       margin-inline: auto;
+    }
+
+    &__showcase-image {
+      filter: drop-shadow($shadow-svg-graphic);
     }
 
     .text-container {
