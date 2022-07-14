@@ -10,6 +10,10 @@
     background-position: right rem(-390px) top rem(-136px);
   }
 
+  @include bp-up("large") {
+    background-position: calc(50% + 720px) rem(-136px);
+  }
+
   &__inner-container {
     @include flex;
     flex-direction: column;
