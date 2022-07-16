@@ -177,6 +177,10 @@
       margin-bottom: rem(80px);
       text-align: center;
 
+      @include bp-up("medium") {
+        margin-bottom: rem(100px);
+      }
+
       @include bp-up("large") {
         --columns: 2;
         align-items: center;
