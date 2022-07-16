@@ -23,6 +23,7 @@
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
   <body class="home">
+    <!-------- START OF HEADER SECTION -------->
     <!-- Mobile menu is toggled with data-menu-active attribute -->
     <header class="primary-header">
       <div class="container">
@@ -45,7 +46,7 @@
               </li>
               <li class="primary-navigation__item">
                 <a class="primary-navigation__link" href="./partners.html"
-                  >partners</a
+                  >Partners</a
                 >
               </li>
               <li class="primary-navigation__item">
@@ -64,19 +65,20 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <!-------- END OF HEADER SECTION -------->
+    <!-------- START OF MAIN SECTION  -------->
+    <main class="main container">
+      <!-------- START OF HERO SECTION  -------->
       <section class="hero grid" aria-labelledby="hero-heading">
-        <div class="hero__right">
-          <div class="hero__mockup-wrapper">
-            <img
-              class="hero__mockup"
-              src="./assets/home/desktop/illustration-phone-mockup.svg"
-              alt="payapi mobile app"
-            />
-          </div>
+        <div class="hero__graphic-wrapper">
+          <img
+            class="hero__graphic"
+            src="./assets/home/desktop/illustration-phone-mockup.svg"
+            alt="payapi mobile app"
+          />
         </div>
-        <div class="hero__left flow">
-          <h1 id="hero-heading" class="display hero__heading">
+        <div class="hero__content flow">
+          <h1 id="hero-heading" class="hero__heading display">
             Start building with our APIs for absolutely free.
           </h1>
           <form class="cta-form" action="" method="GET" novalidate>
@@ -95,73 +97,73 @@
               />
             </div>
           </form>
-          <p class="hero__contact-us">
+          <p class="hero__contact">
             Have any questions? <a href="./contact.html">Contact Us</a>
           </p>
         </div>
       </section>
+      <!-------- END OF HERO SECTION  -------->
+      <!-------- START OF PARTNERS SECTION  -------->
       <section class="partners full-bleed" aria-labelledby="partners-heading">
         <div class="container">
           <div class="partners__inner-container grid">
-            <div class="partners__right">
-              <ul class="partners__logos-grid" role="list">
-                <li>
-                  <img
-                    class="partners__logo"
-                    src="./assets/shared/desktop/tesla-light.svg"
-                    width="131"
-                    height="17"
-                    alt="tesla logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    class="partners__logo"
-                    src="./assets/shared/desktop/microsoft-light.svg"
-                    width="148"
-                    height="31"
-                    alt="microsoft logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    class="partners__logo"
-                    src="./assets/shared/desktop/hewlett-packard-light.svg"
-                    width="142"
-                    height="27"
-                    alt="hewlett packard logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    class="partners__logo"
-                    src="./assets/shared/desktop/oracle-light.svg"
-                    width="133"
-                    height="17"
-                    alt="oracle logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    class="partners__logo"
-                    src="./assets/shared/desktop/google-light.svg"
-                    width="97"
-                    height="33"
-                    alt="google logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    class="partners__logo"
-                    src="./assets/shared/desktop/nvidia-light.svg"
-                    width="139"
-                    height="26"
-                    alt="nvidia logo"
-                  />
-                </li>
-              </ul>
-            </div>
-            <div class="partners__left">
+            <ul class="partners__logos grid" role="list">
+              <li>
+                <img
+                  class="partners__logo"
+                  src="./assets/shared/desktop/tesla-light.svg"
+                  width="131"
+                  height="17"
+                  alt="tesla logo"
+                />
+              </li>
+              <li>
+                <img
+                  class="partners__logo"
+                  src="./assets/shared/desktop/microsoft-light.svg"
+                  width="148"
+                  height="31"
+                  alt="microsoft logo"
+                />
+              </li>
+              <li>
+                <img
+                  class="partners__logo"
+                  src="./assets/shared/desktop/hewlett-packard-light.svg"
+                  width="142"
+                  height="27"
+                  alt="hewlett packard logo"
+                />
+              </li>
+              <li>
+                <img
+                  class="partners__logo"
+                  src="./assets/shared/desktop/oracle-light.svg"
+                  width="133"
+                  height="17"
+                  alt="oracle logo"
+                />
+              </li>
+              <li>
+                <img
+                  class="partners__logo"
+                  src="./assets/shared/desktop/google-light.svg"
+                  width="97"
+                  height="33"
+                  alt="google logo"
+                />
+              </li>
+              <li>
+                <img
+                  class="partners__logo"
+                  src="./assets/shared/desktop/nvidia-light.svg"
+                  width="139"
+                  height="26"
+                  alt="nvidia logo"
+                />
+              </li>
+            </ul>
+            <div class="partners__text-content">
               <div class="text-container">
                 <h2 id="partners-heading" class="partners__heading heading-2">
                   Who we work with
@@ -180,12 +182,14 @@
           </div>
         </div>
       </section>
+      <!-------- END OF PARTNERS SECTION  -------->
+      <!-------- START OF FEATURES SECTION  -------->
       <section class="features">
         <h2 class="sr-only">Features</h2>
-        <div class="features__showcase grid">
-          <div class="features__showcase-image-wrapper">
+        <div class="features__feature feature-1 grid">
+          <div class="features__image-wrapper">
             <img
-              class="features__showcase-image"
+              class="features__image"
               src="./assets/home/desktop/illustration-easy-to-implement.svg"
               alt="api example"
             />
@@ -199,10 +203,10 @@
             </p>
           </div>
         </div>
-        <div class="features__showcase grid">
-          <div class="features__showcase-image-wrapper">
+        <div class="features__feature feature-2 grid">
+          <div class="features__image-wrapper">
             <img
-              class="features__showcase-image"
+              class="features__image"
               src="./assets/home/desktop/illustration-simple-ui.svg"
               alt="payapi mobile app"
             />
@@ -215,47 +219,52 @@
             </p>
           </div>
         </div>
-        <div class="features__feature-list grid">
-          <div class="features__feature flow">
+      </section>
+      <!-------- END OF FEATURES SECTION  -------->
+      <!-------- START OF SERVICES SECTION  -------->
+      <section class="services">
+        <h2 class="sr-only">Services</h2>
+        <div class="services__list even-columns even-columns--medium-up">
+          <div class="services__service flow">
             <img
-              class="features__feature-icon"
+              class="services__icon"
               src="./assets/home/desktop/icon-personal-finances.svg"
               width="106"
               height="106"
               alt=""
             />
-            <p class="features__feature-title">Personal Finances</p>
-            <p class="features__feature-text">
+            <p class="services__title">Personal Finances</p>
+            <p class="services__text">
               Consolidate financial data from multiple sources and categorize
               transactions up to 2 years of history. Analyze reports to
               reconcile activities in your account.
             </p>
           </div>
-          <div class="features__feature flow">
+          <div class="services__service flow">
             <img
-              class="features__feature-icon"
+              class="services__icon"
               src="./assets/home/desktop/icon-banking-and-coverage.svg"
               width="106"
               height="106"
               alt=""
             />
-            <p class="features__feature-title">Banking & Coverage</p>
-            <p class="features__feature-text">
+            <p class="services__title">Banking & Coverage</p>
+            <p class="services__text">
               With our platform, you can speed up account onboarding and support
               ongoing payments for checking, savings, credit card, and brokerage
               accounts.
             </p>
           </div>
-          <div class="features__feature flow">
+          <div class="services__service flow">
             <img
-              class="features__feature-icon"
+              class="services__icon"
               src="./assets/home/desktop/icon-consumer-payments.svg"
               width="106"
               height="106"
               alt=""
             />
-            <p class="features__feature-title">Consumer Payments</p>
-            <p class="features__feature-text">
+            <p class="services__title">Consumer Payments</p>
+            <p class="services__text">
               It’s easier to set up secure bank payments with us through a flow
               designed with the user experience in mind. Customers could
               instantly authenticate their account.
@@ -263,6 +272,8 @@
           </div>
         </div>
       </section>
+      <!-------- END OF SERVICES SECTION  -------->
+      <!-------- START OF CALL TO ACTION SECTION  -------->
       <section class="cta">
         <h2 class="cta__title heading-2">Ready to start?</h2>
         <form class="cta-form" action="" method="GET" novalidate>
@@ -282,7 +293,10 @@
           </div>
         </form>
       </section>
+      <!-------- END OF CALL TO ACTION SECTION  -------->
     </main>
+    <!-------- END OF MAIN SECTION  -------->
+    <!-------- START OF FOOTER SECTION  -------->
     <footer class="primary-footer">
       <div class="container">
         <div class="primary-footer__inner-container">
@@ -361,5 +375,6 @@
         </div>
       </div>
     </footer>
+    <!-------- END OF FOOTER SECTION  -------->
   </body>
 </html>

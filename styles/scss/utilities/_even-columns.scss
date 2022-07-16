@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+.even-columns {
+  display: grid;
+  column-gap: var(--column-gap, 0);
+}
+
+.even-columns--medium-up {
+  @include bp-up(map.get($breakpoints, "medium")) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.even-columns--large-up {
+  @include bp-up(map.get($breakpoints, "large")) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
