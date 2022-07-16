@@ -164,11 +164,28 @@
 
   .features {
     --flow-space: #{rem(80px)};
+    position: relative;
     padding-top: rem(80px);
 
     @include bp-up("medium") {
       --flow-space: #{rem(100px)};
       padding-top: rem(100px);
+    }
+
+    @include bp-up("large") {
+      /* Background graphic */
+      &::after {
+        content: "";
+        position: absolute;
+        right: -50%;
+        bottom: 0;
+        z-index: $z-order-background;
+        display: block;
+        width: 780px;
+        height: 780px;
+        background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+        background-size: contain;
+      }
     }
 
     &__feature {
