@@ -2,6 +2,7 @@
 @use "../abstracts/" as *;
 
 .home {
+  @include page-grid;
   background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
   background-position: center top -550px;
   background-repeat: no-repeat;

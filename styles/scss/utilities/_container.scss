@@ -8,6 +8,7 @@
     1fr min(var(--max-width), calc(100% - (var(--side-space) * 2)))
     1fr;
   column-gap: var(--side-space);
+  align-content: start;
 
   @include bp-up("medium") {
     --side-space: #{rem(39px)};

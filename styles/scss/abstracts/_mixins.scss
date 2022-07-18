@@ -35,6 +35,11 @@
 }
 
 /* --------------- Commonly used --------------- */
+@mixin page-grid {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 @mixin flex {
   display: flex;
   align-items: center;
