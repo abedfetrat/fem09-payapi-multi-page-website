@@ -248,12 +248,6 @@
   }
 
   .services {
-    padding-bottom: rem(80px);
-
-    @include bp-up("medium") {
-      padding-bottom: rem(100px);
-    }
-
     &__list {
       --column-gap: #{rem(10px)};
       row-gap: rem(48px);
@@ -283,14 +277,6 @@
       display: inline-block;
       max-width: $text-length-lg;
       margin-top: rem(16px);
-    }
-  }
-
-  .cta {
-    padding-bottom: rem(80px);
-
-    @include bp-up("medium") {
-      padding-bottom: rem(100px);
     }
   }
 }
