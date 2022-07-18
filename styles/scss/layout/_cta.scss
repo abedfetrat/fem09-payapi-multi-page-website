@@ -1,22 +1,25 @@
 @use "../abstracts/" as *;
 
 .cta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: rem(32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: rem(32px);
+  padding-block: rem(80px);
 
-    .cta__title {
-        display: inline-block;
-    }
+  .cta__title {
+    display: inline-block;
+  }
 
-    @include bp-up("medium") {
-        row-gap: rem(40px);
-    }
+  @include bp-up("medium") {
+    row-gap: rem(40px);
+    padding-block: rem(100px);
+  }
 
-    @include bp-up("large") {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  @include bp-up("large") {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: rem(96px);
+  }
 }

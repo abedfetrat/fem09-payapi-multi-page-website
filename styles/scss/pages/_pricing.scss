@@ -1,5 +1,128 @@
+@use "sass:color";
 @use "../abstracts/" as *;
 
 .pricing {
-    @include page-grid;
+  @include page-grid;
+  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: calc(50% + 276px) -654px;
+  background-repeat: no-repeat;
+
+  @include bp-up("medium") {
+    background-position: calc(50% + 511px) -464px;
+  }
+
+  @include bp-up("large") {
+    background-position: calc(50% + 470px) -527px;
+  }
+
+  .page-heading {
+    margin-block: rem(48px);
+    text-align: center;
+
+    @include bp-up("medium") {
+      margin-top: rem(75px);
+      margin-bottom: rem(69px);
+    }
+
+    @include bp-up("large") {
+      margin-top: rem(82px);
+      margin-bottom: rem(72px);
+      text-align: start;
+    }
+  }
+
+  .plans {
+    row-gap: rem(48px);
+    text-align: center;
+    align-items: stretch;
+
+    @include bp-up("medium") {
+      column-gap: rem(10px);
+    }
+
+    @include bp-up("large") {
+      column-gap: rem(30px);
+      text-align: start;
+    }
+
+    &__plan {
+      --plan-row-gap: #{rem(24px)};
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: var(--plan-row-gap);
+
+      @include bp-up("large") {
+        align-items: start;
+      }
+    }
+
+    &__name {
+      margin-bottom: calc(rem(80px) - var(--plan-row-gap));
+      color: $clr-heading-primary;
+
+      @include bp-up("medium") {
+        margin-bottom: rem(15px);
+      }
+    }
+
+    &__description {
+      display: none;
+      @include bp-up("medium") {
+        display: block;
+      }
+    }
+
+    &__price {
+      margin-top: auto;
+      font-family: $font-secondary;
+      font-size: $fs-900;
+      font-weight: $fw-regular;
+      line-height: $lh-1;
+      color: $clr-heading;
+
+      @include bp-up("medium") {
+        font-size: $fs-800;
+      }
+    }
+
+    &__features-wrapper {
+      align-self: stretch;
+      padding-block: rem(24px);
+      border-block: 1px solid $clr-horizontal-line;
+    }
+
+    &__features {
+      width: fit-content;
+      margin-inline: auto;
+      @include bp-up("large") {
+        margin: 0;
+      }
+    }
+
+    &__feature {
+      font-size: $fs-450;
+      color: color.adjust($color: $clr-heading, $alpha: -0.5);
+      text-align: start;
+    }
+
+    &__feature::before {
+      content: "";
+      visibility: hidden;
+      display: inline-block;
+      width: rem(14px);
+      height: rem(11px);
+      margin-right: rem(24px);
+      background-image: url(/assets/shared/desktop/icon-check.svg);
+      background-size: cover;
+    }
+
+    &__feature[data-active] {
+      color: $clr-heading;
+    }
+
+    &__feature[data-active]::before {
+      visibility: visible;
+    }
+  }
 }
