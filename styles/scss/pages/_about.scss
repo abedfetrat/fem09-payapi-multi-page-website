@@ -1,0 +1,70 @@
+@use "../abstracts/" as *;
+
+.about {
+  @include page-grid;
+  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: calc(50% + 276px) -654px;
+  background-repeat: no-repeat;
+
+  @include bp-up("medium") {
+    background-position: calc(50% + 511px) -464px;
+  }
+
+  @include bp-up("large") {
+    background-position: calc(50% + 470px) -527px;
+  }
+
+  .main.container {
+    --flow-space: #{rem(48px)};
+    padding-top: rem(48px);
+  }
+
+  .page-heading {
+    text-align: center;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16px);
+    text-align: center;
+  }
+
+  .about-section:first-of-type {
+    margin-top: rem(40px);
+  }
+
+  .page-image {
+    margin-top: rem(76px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .stats-section {
+    padding-block: rem(16px);
+    border-block: 1px solid $clr-horizontal-line;
+
+    &__container {
+      justify-content: center;
+      row-gap: rem(32px);
+    }
+
+    &__stat {
+      text-align: center;
+    }
+
+    &__stat-text {
+      font-family: $font-secondary;
+      font-size: $fs-900;
+      font-weight: $fw-regular;
+      line-height: 1.28;
+      color: $clr-heading-primary;
+    }
+  }
+
+  .cta {
+    margin-top: 0;
+  }
+}
