@@ -111,16 +111,18 @@
 
   // background graphic behind image
   .page-image-wrapper::after {
-    content: "";
-    position: absolute;
-    top: rem(-140px);
-    left: rem(-520px);
-    z-index: $z-order-background;
-    display: block;
-    width: rem(780px);
-    height: rem(780px);
-    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
-    background-size: contain;
+    @include bp-up("large") {
+      content: "";
+      position: absolute;
+      top: rem(-140px);
+      left: rem(-520px);
+      z-index: $z-order-background;
+      display: block;
+      width: rem(780px);
+      height: rem(780px);
+      background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+      background-size: contain;
+    }
   }
 
   .stats-section {
