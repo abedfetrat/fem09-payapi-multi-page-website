@@ -3,6 +3,8 @@
 
 /* ------------- Base Form ------------- */
 .form {
+  max-width: rem(445px);
+  
   > * {
     margin-top: rem(24px);
   }

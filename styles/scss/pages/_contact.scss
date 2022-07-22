@@ -1,0 +1,69 @@
+@use "sass:color";
+@use "../abstracts/" as *;
+
+.contact-page {
+  .page-heading {
+    max-width: 25ch;
+    margin-inline: auto;
+    text-align: center;
+
+    @include bp-up("large") {
+      margin: 0;
+      text-align: start;
+    }
+  }
+
+  .page-split {
+    margin-top: rem(40px);
+    row-gap: rem(80px);
+    justify-items: center;
+    align-items: center;
+
+    @include bp-up("medium") {
+      margin-top: rem(54px);
+      row-gap: rem(64px);
+    }
+
+    @include bp-up("large") {
+      margin-top: rem(43px);
+    }
+  }
+
+  .contact-form {
+    @include bp-up("large") {
+      justify-self: start;
+    }
+  }
+
+  .partners {
+    --flow-space: #{rem(32px)};
+
+    @include bp-up("medium") {
+      --flow-space: #{rem(40px)};
+    }
+
+    @include bp-up("large") {
+      justify-self: end;
+    }
+
+    .partners__heading {
+      max-width: 40ch;
+      margin-inline: auto;
+      text-align: center;
+      color: color.adjust($color: $clr-heading, $alpha: -0.25);
+
+      @include bp-up("large") {
+        text-align: start;
+        margin: 0;
+      }
+    }
+
+    .partner-logos {
+      column-gap: rem(64px);
+
+      &__logo {
+        max-width: min(100%, rem(130px));
+      }
+    }
+  }
+}
