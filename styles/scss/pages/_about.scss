@@ -1,31 +1,15 @@
 @use "../abstracts/" as *;
 
-.about {
-  @include page-grid;
-  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
-  background-position: calc(50% + rem(276px)) rem(-654px);
-  background-repeat: no-repeat;
-
-  @include bp-up("medium") {
-    background-position: calc(50% + rem(511px)) rem(-464px);
-  }
-
-  @include bp-up("large") {
-    background-position: calc(50% + rem(470px)) rem(-527px);
-  }
-
+.about-page {
   .main.container {
     --flow-space: #{rem(48px)};
-    padding-top: rem(48px);
 
     @include bp-up("medium") {
       --flow-space: #{rem(64px)};
-      padding-top: rem(75px);
     }
 
     @include bp-up("large") {
       --flow-space: #{rem(56px)};
-      padding-top: rem(82px);
     }
   }
 

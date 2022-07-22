@@ -1,20 +1,7 @@
 @use "sass:color";
 @use "../abstracts/" as *;
 
-.pricing {
-  @include page-grid;
-  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
-  background-position: calc(50% + 276px) -654px;
-  background-repeat: no-repeat;
-
-  @include bp-up("medium") {
-    background-position: calc(50% + 511px) -464px;
-  }
-
-  @include bp-up("large") {
-    background-position: calc(50% + 470px) -527px;
-  }
-
+.pricing-page {
   .page-heading {
     margin-block: rem(48px);
     text-align: center;

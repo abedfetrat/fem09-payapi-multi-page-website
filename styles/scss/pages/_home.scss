@@ -1,15 +1,9 @@
 @use "sass:map";
 @use "../abstracts/" as *;
 
-.home {
-  @include page-grid;
-  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+.home-page {
   background-position: center top -550px;
   background-repeat: no-repeat;
-
-  .main {
-    overflow-x: hidden;
-  }
 
   @include bp-up("medium") {
     background-size: 949px 949px;
@@ -19,6 +13,10 @@
   @include bp-up("large") {
     background-size: 780px 780px;
     background-position: calc(50% + 471px) -172px;
+  }
+
+  .main {
+    overflow-x: hidden;
   }
 
   .hero {

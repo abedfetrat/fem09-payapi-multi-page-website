@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.page {
+  // Pushes the header and footer to the top respective bottom of the page regardless of content.
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  // Circle background graphic at the top right corner
+  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: calc(50% + rem(276px)) rem(-654px);
+  background-repeat: no-repeat;
+
+  @include bp-up("medium") {
+    background-position: calc(50% + rem(511px)) rem(-464px);
+  }
+
+  @include bp-up("large") {
+    background-position: calc(50% + rem(470px)) rem(-527px);
+  }
+
+  .main.container {
+    padding-top: rem(48px);
+
+    @include bp-up("medium") {
+      padding-top: rem(75px);
+    }
+
+    @include bp-up("large") {
+      padding-top: rem(82px);
+    }
+  }
+}
