@@ -23,6 +23,7 @@ $fs-550: rem(20);
 $fs-500: rem(18);
 $fs-450: rem(16);
 $fs-400: rem(15);
+$fs-200: rem(11);
 
 $fw-regular: 400;
 $fw-bold: 700;
@@ -55,14 +56,30 @@ $clr-text-light: color.adjust(
   $color: $blue-gray-050,
   $alpha: -0.3,
 );
+$clr-text-dark: $blue-gray-600;
 $clr-heading: $blue-gray-600;
 $clr-heading-light: $blue-gray-050;
 $clr-heading-primary: $pink-500;
 $clr-background: $blue-gray-100;
 $clr-background-dark: $blue-gray-800;
-$clr-error: $red;
-$clr-horizontal-line: color.adjust($color: $blue-gray-600, $alpha: -0.75);
+$clr-error: color.adjust(
+  $color: $red,
+  $alpha: -0.5,
+);
+$clr-horizontal-line: color.adjust(
+  $color: $blue-gray-600,
+  $alpha: -0.75,
+);
 $clr-element-focus-outline: $blue-gray-600;
+$clr-form-input-border: color.adjust(
+  $color: $blue-gray-600,
+  $alpha: -0.5,
+);
+$clr-form-input-border-active: $blue-gray-600;
+$clr-form-placeholder: color.adjust(
+  $color: $blue-gray-600,
+  $alpha: -0.5,
+);
 $clr-link: $blue-gray-400;
 $clr-link-hover: $blue-gray-600;
 $clr-button-border: $blue-gray-600;

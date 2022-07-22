@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 button,
+.form__submit,
 .btn {
   display: inline-block;
   border: none;
@@ -12,6 +13,7 @@ button,
   user-select: none;
 }
 
+.form__submit,
 .btn {
   padding: em(15, 15) em(24, 15);
   border: 1px solid $clr-button-border;

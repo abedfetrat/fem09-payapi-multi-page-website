@@ -1,4 +1,99 @@
+@use "sass:color";
 @use "../abstracts" as *;
+
+/* ------------- Base Form ------------- */
+.form {
+  > * {
+    margin-top: rem(24px);
+  }
+
+  &__item[data-error] {
+    .form__input {
+      border-color: $clr-error;
+      color: $clr-error;
+
+      &::placeholder {
+        color: $clr-error;
+      }
+    }
+
+    &::after {
+      content: attr(data-error);
+      display: block;
+      width: 100%;
+      height: fit-content;
+      margin-top: rem(8px);
+      margin-left: rem(20px);
+      font-size: $fs-200;
+      color: $clr-error;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding-bottom: rem(17px);
+    padding-left: rem(20px);
+    border: none;
+    border-bottom: 1px solid $clr-form-input-border;
+    background: none;
+    color: $clr-text-dark;
+
+    &::placeholder {
+      opacity: 1;
+      color: $clr-form-placeholder;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border-color: $clr-form-input-border-active;
+    }
+  }
+
+  &__label,
+  &__control {
+    color: $clr-text-dark;
+  }
+
+  &__control {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    column-gap: rem(26px);
+
+    input[type="checkbox"] {
+      display: grid;
+      place-items: center;
+      appearance: none;
+      /* For iOS < 15 to remove gradient background */
+      background-color: #fff;
+      margin: 0;
+      font: inherit;
+      width: em(24, 15);
+      height: em(24, 15);
+      background-color: color.adjust($color: $blue-gray-600, $alpha: -0.75);
+
+      &:checked {
+        background-color: $pink-500;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 70%;
+          height: 70%;
+          background-image: url(/assets/shared/desktop/icon-check-white.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  &__submit {
+    padding-inline: em(50, 15);
+  }
+}
 
 /* ------------- CTA Form ------------- */
 .cta-form {
