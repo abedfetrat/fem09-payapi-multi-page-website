@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  column-gap: rem(40px);
+  row-gap: rem(40px);
+
+  @include bp-up(em(489px)) {
+    grid-template-columns: repeat(3, rem(120px));
+    justify-content: center;
+  }
+
+  &__logo {
+    width: min(100%, rem(120px));
+    height: auto;
+  }
+}

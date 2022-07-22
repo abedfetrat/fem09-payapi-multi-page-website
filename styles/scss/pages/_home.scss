@@ -121,24 +121,9 @@
     }
 
     &__logos {
-      --columns: 2;
-      place-items: center;
-      column-gap: rem(40px);
-      row-gap: rem(40px);
-
-      @include bp-up(em(489px)) {
-        grid-template-columns: repeat(3, rem(120px));
-        justify-content: center;
-      }
-
       @include bp-up("large") {
         order: 1;
       }
-    }
-
-    &__logo {
-      width: min(100%, rem(120px));
-      height: auto;
     }
 
     .text-container {
