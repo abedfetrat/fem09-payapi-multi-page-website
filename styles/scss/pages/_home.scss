@@ -15,22 +15,29 @@
     background-position: calc(50% + 471px) -172px;
   }
 
-  .main {
+  .main.container {
+    padding-top: rem(32px);
     overflow-x: hidden;
+
+    @include bp-up("medium") {
+      padding-top: rem(48px);
+    }
+
+    @include bp-up("large") {
+      padding-top: rem(75px);
+    }
   }
 
   .hero {
-    padding-top: rem(32px);
     padding-bottom: rem(80px);
     justify-items: center;
     row-gap: rem(24px);
 
     @include bp-up("medium") {
-      padding-top: rem(48px);
       row-gap: rem(48px);
     }
     @include bp-up("large") {
-      padding-block: rem(75px);
+      padding-bottom: rem(75px);
       --columns: 2;
       align-items: center;
     }
