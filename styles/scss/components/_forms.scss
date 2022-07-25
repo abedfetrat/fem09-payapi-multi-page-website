@@ -100,7 +100,7 @@
 /* ------------- CTA Form ------------- */
 .cta-form {
   display: inline-block;
-  width: min(100%, 445px);
+  width: min(100%, rem(445px));
 
   &__container {
     width: inherit;
