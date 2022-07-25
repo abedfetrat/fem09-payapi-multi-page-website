@@ -19,13 +19,15 @@
     />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/css/main.css" />
+     <!-- Scripts -->
+     <script src="./scripts/main.js" type="module"></script>
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
   <body class="pricing-page page">
     <!-------- START OF HEADER SECTION -------->
     <!-- Mobile menu is toggled with data-menu-active attribute -->
-    <header class="primary-header">
+    <header class="primary-header js-primary-header">
       <div class="container">
         <div class="primary-header__inner-container">
           <a class="logo-link" href="./index.html" alt="payapi home page">
@@ -37,7 +39,7 @@
               alt=""
             />
           </a>
-          <nav class="primary-navigation">
+          <nav class="primary-navigation js-primary-navigation">
             <ul class="primary-navigation__items" role="list">
               <li class="primary-navigation__item">
                 <a class="primary-navigation__link" href="./pricing.html"
@@ -61,7 +63,7 @@
               </li>
             </ul>
           </nav>
-          <button class="primary-header__menu-toggle"></button>
+          <button class="primary-header__menu-toggle js-menu-toggle" aria-expanded="false"></button>
         </div>
       </div>
     </header>
