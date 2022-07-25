@@ -147,9 +147,11 @@
       <!-------- START OF CALL TO ACTION SECTION  -------->
       <section class="cta">
         <h2 class="cta__title heading-2">Ready to start?</h2>
-        <form class="cta-form" action="" method="GET" novalidate>
+        <form class="cta-form js-cta-form" action="" method="GET" novalidate>
           <div class="cta-form__container">
+            <label class="sr-only" for="cta-form__email">Enter email address</label>
             <input
+              id="cta-form__email"
               class="cta-form__email"
               name="email"
               type="email"

@@ -63,7 +63,10 @@
               </li>
             </ul>
           </nav>
-          <button class="primary-header__menu-toggle js-menu-toggle" aria-expanded="false"></button>
+          <button
+            class="primary-header__menu-toggle js-menu-toggle"
+            aria-expanded="false"
+          ></button>
         </div>
       </div>
     </header>
@@ -83,9 +86,11 @@
           <h1 id="hero-heading" class="hero__heading display">
             Start building with our APIs for absolutely free.
           </h1>
-          <form class="cta-form" action="" method="GET" novalidate>
-            <div class="cta-form__container">
+          <form class="cta-form js-cta-form" action="" method="GET" novalidate>
+            <div class="cta-form__container" data-error="Hello">
+              <label class="sr-only" for="cta-form__email">Enter email address</label>
               <input
+                id="cta-form__email"
                 class="cta-form__email"
                 name="email"
                 type="email"
