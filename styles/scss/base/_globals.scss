@@ -31,6 +31,7 @@ a {
   font-weight: $fw-bold;
   color: $clr-link;
   text-decoration: none;
+  transition: color 150ms ease;
   @include on-event {
     color: $clr-link-hover;
   }

@@ -86,8 +86,11 @@
     width: rem(24px);
     height: rem(24px);
 
-    @include on-event {
-      .primary-footer__social-icon {
+    .primary-footer__social-icon {
+      path {
+        transition: fill 150ms ease;
+      }
+      @include on-event {
         path {
           fill: $clr-social-icon-hover;
         }
