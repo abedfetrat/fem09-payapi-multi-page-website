@@ -22,7 +22,8 @@ button,
   color: $clr-button-text;
   font-size: $fs-400;
   font-weight: $fw-bold;
-  transition: all 150ms ease;
+  transition: border-color 150ms ease, background-color 150ms ease,
+    color 150ms ease;
 
   @include on-event {
     background-color: $clr-button-bg-hover;
