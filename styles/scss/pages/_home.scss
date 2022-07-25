@@ -48,7 +48,7 @@
       aspect-ratio: 263/500;
 
       @include bp-up("large") {
-        width: rem(263px);
+        width: 263px;
         margin-right: rem(128px);
         justify-self: end;
         order: 1;
@@ -204,10 +204,10 @@
 
     &__feature.feature-1 {
       .features__image-wrapper {
-        width: min(100%, rem(392px));
+        width: min(100%, 392px);
         aspect-ratio: 445/284;
         @include bp-up("large") {
-          width: rem(445px);
+          width: 445px;
         }
       }
       .features__image {
@@ -217,10 +217,10 @@
 
     &__feature.feature-2 {
       .features__image-wrapper {
-        width: min(100%, rem(363px));
+        width: min(100%, 363px);
         aspect-ratio: 566/500;
         @include bp-up("large") {
-          width: rem(566px);
+          width: 566px;
         }
       }
       .features__image {
@@ -252,7 +252,7 @@
       display: inline-block;
       /* TODO: create bp-between function */
       @media screen and (min-width: map.get($breakpoints, "medium")) and (max-width: calc(map.get($breakpoints, "large") - 1px)) {
-        width: rem(88px);
+        width: 88px;
         height: auto;
       }
     }
