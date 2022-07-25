@@ -19,8 +19,8 @@
     />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/css/main.css" />
-     <!-- Scripts -->
-     <script src="./scripts/main.js" type="module"></script>
+    <!-- Scripts -->
+    <script src="./scripts/main.js" type="module"></script>
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
@@ -63,7 +63,16 @@
               </li>
             </ul>
           </nav>
-          <button class="primary-header__menu-toggle js-menu-toggle" aria-expanded="false"></button>
+          <button
+            class="primary-header__menu-toggle js-menu-toggle"
+            aria-expanded="false"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
         </div>
       </div>
     </header>
@@ -74,7 +83,12 @@
         Submit a help request and we’ll get in touch shortly.
       </h1>
       <div class="page-split even-columns even-columns--large-up">
-        <form class="form contact-form js-contact-form" action="" method="POST" novalidate>
+        <form
+          class="form contact-form js-contact-form"
+          action=""
+          method="POST"
+          novalidate
+        >
           <div class="form__item">
             <label class="sr-only" for="contact-form__full-name"
               >Full Name</label
@@ -220,7 +234,9 @@
         <h2 class="cta__title heading-2">Ready to start?</h2>
         <form class="cta-form js-cta-form" action="" method="GET" novalidate>
           <div class="cta-form__container">
-            <label class="sr-only" for="cta-form__email">Enter email address</label>
+            <label class="sr-only" for="cta-form__email"
+              >Enter email address</label
+            >
             <input
               id="cta-form__email"
               class="cta-form__email"

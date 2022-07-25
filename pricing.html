@@ -19,8 +19,8 @@
     />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/css/main.css" />
-     <!-- Scripts -->
-     <script src="./scripts/main.js" type="module"></script>
+    <!-- Scripts -->
+    <script src="./scripts/main.js" type="module"></script>
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
@@ -63,7 +63,16 @@
               </li>
             </ul>
           </nav>
-          <button class="primary-header__menu-toggle js-menu-toggle" aria-expanded="false"></button>
+          <button
+            class="primary-header__menu-toggle js-menu-toggle"
+            aria-expanded="false"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
         </div>
       </div>
     </header>
@@ -146,7 +155,9 @@
         <h2 class="cta__title heading-2">Ready to start?</h2>
         <form class="cta-form js-cta-form" action="" method="GET" novalidate>
           <div class="cta-form__container">
-            <label class="sr-only" for="cta-form__email">Enter email address</label>
+            <label class="sr-only" for="cta-form__email"
+              >Enter email address</label
+            >
             <input
               id="cta-form__email"
               class="cta-form__email"
@@ -182,13 +193,19 @@
           <nav class="primary-navigation">
             <ul class="primary-navigation__items" role="list">
               <li class="primary-navigation__item">
-                <a class="primary-navigation__link" href="./pricing.html">Pricing</a>
+                <a class="primary-navigation__link" href="./pricing.html"
+                  >Pricing</a
+                >
               </li>
               <li class="primary-navigation__item">
-                <a class="primary-navigation__link" href="./about.html">About</a>
+                <a class="primary-navigation__link" href="./about.html"
+                  >About</a
+                >
               </li>
               <li class="primary-navigation__item">
-                <a class="primary-navigation__link" href="./contact.html">Contact</a>
+                <a class="primary-navigation__link" href="./contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
