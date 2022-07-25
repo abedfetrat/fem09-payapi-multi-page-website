@@ -30,16 +30,17 @@
     @include bp-down(map.get($breakpoints, "medium") - em(1px)) {
       --nav-link-padding: #{rem(16px)};
 
-      display: none;
       position: fixed;
       top: 0;
       right: 0;
       bottom: 0;
       z-index: $z-order-mobile-menu;
+      transform: translateX(100%);
       width: min(100%, rem(300px));
       padding-top: rem(95px);
       padding-inline: rem(24px);
       background-color: $clr-background-dark;
+      transition: transform 350ms ease;
 
       &__items {
         flex-direction: column;
@@ -97,7 +98,7 @@
 
   &[data-menu-active] {
     .primary-navigation {
-      display: block;
+      transform: translateX(0);
     }
     .primary-header__menu-toggle {
       position: fixed;
