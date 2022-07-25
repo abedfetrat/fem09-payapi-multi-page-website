@@ -436,7 +436,7 @@ button,
   display: block;
   width: 70%;
   height: 70%;
-  background-image: url(/assets/shared/desktop/icon-check-white.svg);
+  background-image: url("../..//assets/shared/desktop/icon-check-white.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -687,7 +687,7 @@ button,
 
 .primary-footer {
   background-color: #1b262f;
-  background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+  background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
   background-position: 50% -50%;
   background-repeat: no-repeat;
 }
@@ -790,7 +790,7 @@ button,
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
   background-position: calc(50% + 17.25rem) -40.875rem;
   background-repeat: no-repeat;
 }
@@ -995,7 +995,7 @@ button,
     display: block;
     width: 48.75rem;
     height: 48.75rem;
-    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
     background-size: contain;
   }
 }
@@ -1149,7 +1149,7 @@ button,
   width: 0.875rem;
   height: 0.6875rem;
   margin-right: 1.5rem;
-  background-image: url(/assets/shared/desktop/icon-check.svg);
+  background-image: url("../../assets/shared/desktop/icon-check.svg");
   background-size: cover;
 }
 .pricing-page .plans__feature[data-active] {
@@ -1256,7 +1256,7 @@ button,
   }
 }
 .home-page .partners {
-  background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+  background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
   background-position: center top -602px;
   background-repeat: no-repeat;
   background-color: #1b262f;
@@ -1345,7 +1345,7 @@ button,
     display: block;
     width: 780px;
     height: 780px;
-    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    background-image: url("../../assets/shared/desktop/bg-pattern-circle.svg");
     background-size: contain;
   }
 }
