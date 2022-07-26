@@ -4,7 +4,7 @@
 /* ------------- Base Form ------------- */
 .form {
   max-width: rem(445px);
-  
+
   > * {
     margin-top: rem(24px);
   }
@@ -83,7 +83,7 @@
           display: block;
           width: 70%;
           height: 70%;
-          background-image: url('../..//assets/shared/desktop/icon-check-white.svg');
+          background-image: url("../..//assets/shared/desktop/icon-check-white.svg");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
@@ -102,16 +102,11 @@
   display: inline-block;
   width: min(100%, rem(445px));
 
-  &__container {
-    width: inherit;
-
-    @include bp-up("medium") {
-      position: relative;
-    }
+  @include bp-up("medium") {
+    position: relative;
   }
 
-  &__email,
-  &__submit {
+  > * {
     display: block;
     width: inherit;
   }
@@ -125,6 +120,7 @@
   }
 
   &__email {
+    width: inherit;
     padding: rem(15px) rem(27px);
     border: none;
     border-radius: rem(50px);

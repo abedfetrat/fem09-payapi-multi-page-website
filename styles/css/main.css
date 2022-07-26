@@ -450,15 +450,12 @@ button,
   display: inline-block;
   width: min(100%, 27.8125rem);
 }
-.cta-form__container {
-  width: inherit;
-}
 @media screen and (min-width: 48em) {
-  .cta-form__container {
+  .cta-form {
     position: relative;
   }
 }
-.cta-form__email, .cta-form__submit {
+.cta-form > * {
   display: block;
   width: inherit;
 }
@@ -482,6 +479,7 @@ button,
   color: #6c8294;
 }
 .cta-form__email {
+  width: inherit;
   padding: 0.9375rem 1.6875rem;
   border: none;
   border-radius: 3.125rem;

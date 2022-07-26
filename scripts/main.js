@@ -10,8 +10,3 @@ new PrimaryHeader(headerElement);
 const contactFormElement = document.querySelector('.js-contact-form');
 if (contactFormElement != null && contactFormElement != undefined)
     new ContactForm(contactFormElement);
-
-// Init CTA Form componenet
-const callToActionFormElement = document.querySelector('.js-cta-form');
-if (callToActionFormElement != null && callToActionFormElement != undefined)
-    new CallToActionForm(callToActionFormElement);
