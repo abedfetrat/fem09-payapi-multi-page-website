@@ -28,7 +28,7 @@ export default function ContactForm(formElement) {
     function setErrorMessage(field) {
         let message = 'This field can\'t be empty';
         if (field === email && field.validity.typeMismatch) {
-            message = 'Oops! Please check your email';
+            message = 'Please use a valid email address';
         }
         field.parentElement.setAttribute('data-error', message);
     }

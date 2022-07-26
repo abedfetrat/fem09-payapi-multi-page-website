@@ -1,6 +1,5 @@
 import PrimaryHeader from './primary-header.js';
 import ContactForm from './contact-form.js';
-import CallToActionForm from './cta-form.js';
 
 // Init Header Component 
 const headerElement = document.querySelector('.js-primary-header');
