@@ -4,16 +4,22 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
+  justify-content: center;
   column-gap: rem(40px);
-  row-gap: rem(40px);
+  row-gap: rem(39px);
 
-  @include bp-up(em(489px)) {
-    grid-template-columns: repeat(3, rem(120px));
-    justify-content: center;
+  @include bp-up(em(500px)) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(62px);
+    row-gap: rem(39px);
+  }
+
+  @include bp-up("medium") {
+    grid-template-columns: repeat(3, rem(140px));
   }
 
   &__logo {
-    width: min(100%, rem(120px));
+    width: 100%;
     height: auto;
   }
 }

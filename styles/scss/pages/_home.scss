@@ -34,12 +34,13 @@
     row-gap: rem(24px);
 
     @include bp-up("medium") {
+      align-items: center;
       row-gap: rem(48px);
     }
     @include bp-up("large") {
+      align-items: start;
       padding-bottom: rem(75px);
       --columns: 2;
-      align-items: center;
     }
 
     &__graphic-wrapper {
@@ -49,7 +50,7 @@
 
       @include bp-up("large") {
         width: 263px;
-        margin-right: rem(128px);
+        margin-right: rem(95px);
         justify-self: end;
         order: 1;
       }
@@ -69,6 +70,8 @@
         --flow-space: #{rem(32px)};
       }
       @include bp-up("large") {
+        --flow-space: #{rem(46px)};
+        margin-top: rem(80px);
         text-align: start;
       }
     }
@@ -82,7 +85,7 @@
     }
 
     &__contact {
-      margin-top: rem(16px);
+      margin-top: rem(12px);
       @include bp-up("large") {
         margin-left: rem(27px);
       }
@@ -154,13 +157,15 @@
   }
 
   .features {
-    --flow-space: #{rem(80px)};
     position: relative;
     padding-top: rem(80px);
 
     @include bp-up("medium") {
-      --flow-space: #{rem(100px)};
       padding-top: rem(100px);
+    }
+
+    @include bp-up("large") {
+      padding-top: rem(130px);
     }
 
     @include bp-up("large") {
@@ -193,7 +198,8 @@
         --columns: 2;
         align-items: center;
         justify-items: start;
-        margin-bottom: rem(150px);
+        column-gap: rem(30px);
+        margin-bottom: rem(120px);
         text-align: start;
       }
     }
@@ -226,6 +232,9 @@
       .features__image {
         transform: scale(1.28) translate(3.5%, 3.8%);
       }
+      @include bp-up("large") {
+        margin-bottom: rem(138px);
+      }
     }
 
     &__feature:nth-of-type(even) {
@@ -241,6 +250,10 @@
     &__list {
       --column-gap: #{rem(10px)};
       row-gap: rem(48px);
+
+      @include bp-up("large") {
+        --column-gap: #{rem(30px)};
+      }
     }
 
     &__service {
@@ -249,7 +262,7 @@
     }
 
     &__icon {
-      display: inline-block;
+      margin-inline: auto;
       /* TODO: create bp-between function */
       @media screen and (min-width: map.get($breakpoints, "medium")) and (max-width: calc(map.get($breakpoints, "large") - 1px)) {
         width: 88px;
@@ -258,15 +271,17 @@
     }
 
     &__title {
-      $font-size: $fs-500;
+      font-size: $fs-500;
       font-weight: $fw-bold;
       color: $clr-heading;
+      line-height: $lh-5;
     }
 
     &__text {
       display: inline-block;
       max-width: $text-length-lg;
       margin-top: rem(16px);
+      line-height: 1.7;
     }
   }
 }

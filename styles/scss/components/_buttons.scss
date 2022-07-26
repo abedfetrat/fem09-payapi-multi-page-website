@@ -15,6 +15,7 @@ button,
 
 .form__submit,
 .btn {
+  min-width: rem(129px);
   padding: em(15, 15) em(24, 15);
   border: 1px solid $clr-button-border;
   border-radius: 50px;
